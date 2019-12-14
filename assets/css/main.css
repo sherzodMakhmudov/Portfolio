@@ -2505,7 +2505,7 @@ input, select, textarea {
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
+			padding: 5em 0 0 0;
 			vertical-align: middle;
 		}
 
