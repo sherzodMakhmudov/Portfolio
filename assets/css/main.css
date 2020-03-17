@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 1000%;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -82,7 +82,7 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 780px) {
 
 		html, body {
 			min-width: 320px;
@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #ffffff;
+		background-color: red;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #413033 15%, #17b1d7 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #413033 15%, #17b1d7 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #413033 15%, #17b1d7 85%);
@@ -2708,7 +2708,7 @@ input, select, textarea {
 /* Table */
 
 	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch; 
 		overflow-x: auto;
 	}
 
@@ -3789,7 +3789,7 @@ input, select, textarea {
 			margin-left: auto;
 			margin-right: auto;
 			padding: 0;
-			max-width: 1200px;
+			max-width: 900px;
 		}
 		
 		.container:before,

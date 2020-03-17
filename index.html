@@ -6,6 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- NEW -->
+		<!-- css -->
+		
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+		<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/nivo-lightbox.css" rel="stylesheet" />
+		<link href="assets/css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/animate.css" rel="stylesheet" />
+		<link href="assets/css/style.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="assets/css/carousel.css"> 
+
+		<!-- template skin -->
+		<link id="t-colors" href="color/default.css" rel="stylesheet">
+
 	</head>
 	<body class="is-preload">
 
@@ -15,8 +32,8 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<!-- <span class="logo"><img src="images/logo.svsg" alt="" /></span> -->
-						<h1>Sherzod Makhmudov</h1>
-						<h2><p>Software Engineer.</p></h2>
+						<h1 style="color: aliceblue;">Sherzod Makhmudov</h1>
+						<h2 style="color: aliceblue;"><p>Software Engineer.</p></h2>
 					</header>
 
 				<!-- Nav -->
@@ -52,32 +69,179 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
+							<section id="first" >
+								<center><header class="major">
 									<h2>PROJECTS</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="image"><img src="images/gearUp.png" alt = ""></span> 
-										<h3>GearUp</h3>
-										<p>The "Gear Up" is an app geared towards residents who can hire local "GearUp" staff to do small handy tasks.</p>
-									</li>
+								</header></center>
+								
+								<section id="content2" >
+								  <div class="container">
+									<div class="row text-center heading">
+									  <h3><b>Tyro79</b></h3>
+									</div>
+									<div class="row">
+									  <div class="col-md-6">
+										  <div class="wow fadeInRight" data-wow-delay="0.3s">
+											  <p>
+												I am currenly building an autonomous quadcopter using Python with Arduino Uno. Drone itself is assembled from the scratch.
+											  </p>
+											  <p>
+												<b>Technologies:</b>
+												<ul>
+												  <li>Arduino</li>
+												  <li>BetaFllight</li>
+												  <li>BLHeli Configurator</li>
+												</ul>
+											  </p>
+											  <div class="buttons">
+												<a  target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Python:Under development</small></a>
+											  </div>
+											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
+											</div>
+											
+									  </div>
+									  <div class="col-md-6">
+										<div class="wow fadeInRight" data-wow-delay="0.3s">
+										  <img src="images/moreScreens/drone/2.jpg" alt="" class="img-responsive" />
+										</div>
+									  </div>
+							
+									</div>
+								  </div>
+							
+								</section>
 
-									<li>
-										<span class="image"><img src="images/exchageagramIcon.png" alt=""></span>
-										<h3>Exchangeagram</h3>
-										<p>Exchangeagram is an Instagram clone. I have chosen this app just becuase it had very useful features that could help me to gain a great amount of good programming skills in the process of rebuilding it.</p>
-									</li>
 
-									<li>
-										<span class="image"> <img src="images/aloqa.png" alt=""></span>
-										<h3>AloqaMobile</h3>
-										<p>AloqaMobile is an official app that is built for Uzmobile and UzOnline customers. </p>
-									</li>
-								</ul>
-								<ul style="margin-left: 30%; margin-right: 30%; width: 40%">
-									<a href="ShowProject/index.html" class="button" target="_blank">Learn More</a>
-								</ul>
+								<div id="wrapper">
+									<!-- Section: intro -->
+									<section id="intro" class="intro">
+									  <div class="intro-content">
+										<div class="container">
+											<div class="row text-center heading">
+												<h3><b>Gear Up</b></h3>
+											  </div>
+										  <div class="row">
+											<div class="col-sm-6 col-md-6 col-lg-6">
+											  <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+												<img src="images/gearUp.png" class="img-responsive" alt="" />
+											  </div>
+											</div>
+											<div class="col-md-6">
+											  <div class="wow fadeInRight" data-wow-delay="0.3s">
+												<p>
+												  The "Gear Up" is an app geared towards residents who can hire local guys to do small handy tasks. A user can scroll through the pictures and handy skills of the available Gear Up handyman in their area.
+												</p>
+												<p>
+												  <b>Technologies:</b>
+												  <p>
+													<ul>
+													  <li>CoreLocation.</li>
+													  <li>MapKit</li>
+													  <li>Firebase Storage&Databse</li>
+													  <li>Messaging</li>
+													  <li>Stripe payment gateway and etc.</li>
+													</ul>
+												  </p>
+												</p>
+												<div class="buttons">
+												  <a href="https://github.com/sherzodMakhmudov/gearUP/" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
+												  <a  class="btn btn-info btn-lg wow fadeInRight" data-wow-duration="3s" data-wow-delay="0.3s"><i class="fa fa-apple fa-2x"></i> Download <br /> <small>Under development</small></a>
+												</div>
+											  </div>
+											  <!-- Carousel -->
+											  <div class="gallery">
+												<!-- <div class="gallery-container">
+												  <img class="gallery-item" src="images/moreScreens/gearUp/gearUp1.PNG">
+												  <img class="gallery-item" src="images/moreScreens/gearUp/gearUp6.PNG">
+												  <img class="gallery-item" src="images/moreScreens/gearUp/gearUp7.PNG">
+												  <img class="gallery-item" src="images/moreScreens/gearUp/gearUp8.PNG">
+												  <img class="gallery-item" src="images/moreScreens/gearUp/gearUp9.PNG">
+												</div> -->
+												<!-- <div class="gallery-controls"></div> -->
+											  </div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									</section>
+								
+									<!-- /Section: intro -->
+									<div class="divider-short"></div>
+									<section id="content1" class="home-section">
+									  <div class="container">
+										<div class="row text-center heading">
+										  <h3><b>Exchangeagram</b></h3>
+										</div>
+										<div class="row">
+										  <div class="col-md-6">
+											<div class="wow fadeInLeft" data-wow-delay="0.2s">
+											  <img src="images/harryPosting.png" alt="" class="img-responsive" />
+											</div>
+										  </div>
+										  <div class="col-md-6">
+											<div class="wow fadeInRight" data-wow-delay="0.3s">
+											  <p>
+												I was watching the movie called "The Internship" and there was a scene where they had to develop an app for their next challenge. So, I was inspired and decided that I will build "Exchangeagram" while watching their little agrument about what they wanted to build. 
+											  </p>
+											  <p>I have used JavaScript for the backend and Swift for frontend development.</p>
+											  <p>
+												<b>Technologies:</b>
+												<ul>
+												  <li>Sails MVC</li>
+												  <li>Amazon Storage S3</li>
+												  <li>Alamofire</li>
+												  <li>Heroku</li>
+												  <li>mlab MongoDB</li>
+												</ul>
+											  </p>
+											  <div class="buttons">
+												<a href="https://github.com/sherzodMakhmudov/Exchangeagram" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
+											  </div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									</section>
+									<!-- /Section: content -->
+								
+									<section id="content1" class="home-section">
+									  <div class="container">
+										<div class="row text-center heading">
+										  <h3><b>ClassRoster</b></h3>
+										</div>
+										<div class="row">
+										  <div class="col-md-6">
+											<div class="wow fadeInLeft" data-wow-delay="0.2s">
+											  <img src="images/studenRosterScreen.png" alt="" class="img-responsive" />
+											</div>
+										  </div>
+										  <div class="col-md-6">
+											<div class="wow fadeInRight" data-wow-delay="0.3s">
+											  <p>
+												
+											  </p>
+											  <p>
+												This project was developed by using C++ and it's core funcionality is to parse the student's raw data from a given array and create a student object with different variables such as student Id, first name, last name and etc.This program can perform multiple operations on the student objects:
+												<p><ul>
+												  <li>Printing student's information in a table.</li>
+												  <li>Printing all invalid emails.</li>
+												  <li>Printing average days to finish a class.</li>
+												  <li>Printing student't information by their degree type</li>
+												  <li>And last but not least, removing student's information from the table</li>
+												</ul></p>
+											  </p>
+											  <div class="buttons">
+												<a href="https://github.com/sherzodMakhmudov/student_database" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
+											  </div>
+											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									</section>
+								</div>
+
+
 							</section>
 
 						<!-- Second Section -->
@@ -128,9 +292,9 @@
 					<footer id="contacts">
 						<section>
 							<h2>Contacts:</h2>
-							<dl class="alt">
+							<dl class="alt" style="color:white">
 								<dt>Phone:</dt>
-								<p>(408) 657-7492</p>
+								<p>&nbsp; (408) 657-7492</p>
 								<dt>Email:</dt>
 								<p>sherkka0204@gmail.com</p>
 							</dl>
@@ -151,6 +315,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- New JS -->
+
+			<!-- Core JavaScript Files -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+			<script src="assets/js/jquery.easing.min.js"></script>
+			<script src="assets/js/wow.min.js"></script>
+			<script src="assets/js/jquery.scrollTo.js"></script>
+			<script src="assets/js/nivo-lightbox.min.js"></script>
+			<script src="assets/js/custom.js"></script>
+			<script src="assets/contactform/contactform.js"></script>
+			<script src="assets/js/modal.js"></script>
+			<script src="assets/js/carousel.js"></script>
+			<script src="assets/js/carousel1.js"></script>
+
 
 	</body>
 </html>
