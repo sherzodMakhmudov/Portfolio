@@ -79,7 +79,7 @@ function closeModalExchange() {
     window.onscroll = function () { window.scrollTo(); };
 }
 
-function showSlidesExchange(n){
+function showSlidesExchange (n){
     var i;
     var slides = document.getElementsByClassName("mySlides")
 
