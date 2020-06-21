@@ -1803,3 +1803,34 @@ a.btn:focus{
 	color: #ffffff !important;
 	background-color: #e73c3c !important;
   }
+
+  /* .gearUpSlide {
+    background-image: url('dashboardpurple.jpg');
+    width: 300px;
+    height: 400px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slideshowGearUp 10s infinite linear;
+}
+
+@keyframes slideshowGearUp {
+    50% {
+        background-image: url('/images/moreScreens/gearUp/gearUp1.PNG');
+    }
+    70% {
+        background-image: url('/images/moreScreens/gearUp/gearUp2.PNG');
+    }
+    100% {
+        background-image: url('/images/moreScreens/gearUp/gearUp3.PNG');
+    }
+    from {
+        box-shadow: 1px 2px 10px 5px rgb(51, 49, 49)
+    }
+    to {
+        box-shadow: 2px 3px 11px 6px rgb(61, 60, 60)
+    }
+} */

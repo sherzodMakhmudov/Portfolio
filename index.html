@@ -12,10 +12,10 @@
 		
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
 		<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/nivo-lightbox.css" rel="stylesheet" />
-		<link href="assets/css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/animate.css" rel="stylesheet" />
+		<link href="assets/css/nivo-lightbox.css" rel="stylesheet">
+		<link href="assets/css/animate.css" rel="stylesheet">
 		<link href="assets/css/style.css" rel="stylesheet">
+		<link href= "assets/css/modalLightBox.css" rel="stylesheet">
 
 
 		<link rel="stylesheet" href="assets/css/carousel.css"> 
@@ -57,13 +57,14 @@
 										<header class="major">
 											<h2>ABOUT ME</h2>
 										</header>
-										<p>Hi, my name is Sherzod. I am a software engineer based in Bay Area, CA and currently working towards obtaining my bachelors degree in CS. Most of the time I develop iOS native applications and write programs that controls drones using Python.<br>When I have free time I like to go out for a hiking or riding a bike with my friends. I also love playing video games and reading different types of books<br>If you have any inquiries please feel free to reach out to me:)</p>
+										<p>Hi, my name is Sherzod. I am a software engineer based in Bay Area, CA and currently working towards obtaining my Bachelors degree in CS. Most of the time I develop iOS native applications and write programs that controls drones using Python.<br>When I have free time I like to go out for a hiking or riding a bike with my friends. I also love playing video games and reading different types of books<br>If you have any inquiries please feel free to reach out to me:)</p>
 									</div>
 									<span class="image"><img src="images/profile.jpg" alt="" /></span>
 								</div>
 								<ul class="icons">
 									<li><a href="https://github.com/sherzodMakhmudov" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
 									<li><a href="https://www.linkedin.com/in/sherzodmakhmudov" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<!-- <li><a href="https://www.instagram.com/sherdiddy/" class="icon brands fa-instagram alt" target="_blank"><span class="label">Instagram</span></a></li> -->
 								</ul>
 							</section>
 
@@ -95,8 +96,31 @@
 											  <div class="buttons">
 												<a  target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>C++:Under development</small></a>
 											  </div>
-											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
+											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button" onclick="openModalDrone(); currentSlide(1)">More Screens</button>
 											</div>
+
+											<!-- Drone -->
+											<div id="myModalDrone" class="modal">
+												<span class="close cursor" onclick="closeModalDrone()">&times;</span>
+												<div class="modal-content">
+											  
+												  <div class="mySlides">
+													<div class="numbertext">1 / 2</div>
+													<img src="images/moreScreens/drone/1.jpg" style="width:100%">
+												  </div>
+											  
+												  <div class="mySlides">
+													<div class="numbertext">2 / 2</div>
+													<img src="images/moreScreens/drone/2.jpg" style="width:100%">
+												  </div>
+											  
+												  
+												  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+												  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+											  
+												</div>
+											  </div>
+												<!-- end -->
 											
 									  </div>
 									  <div class="col-md-6">
@@ -104,10 +128,10 @@
 										  <img src="images/moreScreens/drone/2.jpg" alt="" class="img-responsive" />
 										</div>
 									  </div>
+
 							
 									</div>
 								  </div>
-							
 								</section>
 
 
@@ -145,51 +169,113 @@
 												<div class="buttons">
 												  <a href="https://github.com/sherzodMakhmudov/gearUP/" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
 												</div>
-												<button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
+												<button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button" onclick="openModal(); currentSlide(3)">More Screens</button>
 											  </div>
-											  <!-- Carousel -->
-											  <div class="gallery">
+											  
+
+											  <!-- Setup lightbox for GearUp -->
+											  
+											  <div id="myModal" class="modal">
+												<span class="close cursor" onclick="closeModal()">&times;</span>
+												<div class="modal-content">
+											  
+												  <div class="mySlides">
+													<div class="numbertext">1 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp10.PNG" style="width:100%">
+												  </div>
+											  
+												  <div class="mySlides">
+													<div class="numbertext">2 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp5.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">3 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp3.png" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">4 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp4.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">5 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp2.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">6 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp6.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">7 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp7.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">8 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp8.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">9 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp9.PNG" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">10 / 10</div>
+													<img src="images/moreScreens/gearUp/gearUp1.PNG" style="width:100%">
+												  </div>
+											  
+												  
+												  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+												  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+											  
+												</div>
 											  </div>
+												<!-- end -->
 											</div>
 										  </div>
 										</div>
 									  </div>
 									</section>
 
-									<div class="container">
-										<div class="row text-center heading">
-										  <h3><b>SightedGuide</b></h3>
-										</div>
-										<div class="row">
-										  <div class="col-md-6">
-											  <div class="wow fadeInRight" data-wow-delay="0.3s">
-												  <p>
-													An application that has an object recognition that helps blind people in natural disasters
-												  </p>
-												  <p>
-													<b>Technologies:</b>
-													<ul>
-													  <li>IBM Watson Visual Recognition</li>
-													  <li>IBM Watson Text to Speech</li>
-													</ul>
-												  </p>
-												  <div class="buttons">
-													<a href="https://github.com/sherzodMakhmudov/sightedGuide" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
+									<section id="content2" >
+										<div class="container">
+										  <div class="row text-center heading">
+											<h3><b>SightedGuide</b></h3>
+										  </div>
+										  <div class="row">
+											<div class="col-md-6">
+												<div class="wow fadeInRight" data-wow-delay="0.3s">
+													<p>
+														An application that has an object recognition that helps blind people in natural disasters
+													</p>
+													<p>
+													  <b>Technologies:</b>
+													  <ul>
+														<li>IBM Watson Visual Recognition</li>
+														<li>IBM Watson Text to Speech</li>
+													  </ul>
+													</p>
+													<div class="buttons">
+													  <a  target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>C++:Under development</small></a>
+													</div>
+													<button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
 												  </div>
-												  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
-												</div>
-												
-										  </div>
-										  <div class="col-md-6">
-											<div class="wow fadeInRight" data-wow-delay="0.3s">
-											  <img src="images/moreScreens/drone/2.jpg" alt="" class="img-responsive" />
+												  
 											</div>
+											<div class="col-md-6">
+											  <div class="wow fadeInRight" data-wow-delay="0.3s">
+												<img src="images/moreScreens/drone/2.jpg" alt="" class="img-responsive" />
+											  </div>
+											</div>
+								  
 										  </div>
-								
 										</div>
-									  </div>
-
-									
+									  </section>
 								
 									<!-- /Section: intro -->
 									<div class="divider-short"></div>
@@ -223,8 +309,42 @@
 											  <div class="buttons">
 												<a href="https://github.com/sherzodMakhmudov/Exchangeagram" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
 											  </div>
-											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
+											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button" onclick="openModalExchange(); currentSlide(13)">More Screens</button>
 											</div>
+
+
+											<!-- Exchangegram -->
+											<div id="myModalExchange" class="modal">
+												<span class="close cursor" onclick="closeModalExchange()">&times;</span>
+												<div class="modal-content">
+											  
+												  <div class="mySlides">
+													<div class="numbertext">1 / 4</div>
+													<img src="images/moreScreens/exchangegram/1.png" style="width:100%">
+												  </div>
+											  
+												  <div class="mySlides">
+													<div class="numbertext">2 / 4</div>
+													<img src="images/moreScreens/exchangegram/2.png" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">3 / 4</div>
+													<img src="images/moreScreens/exchangegram/3.png" style="width:100%">
+												  </div>
+
+												  <div class="mySlides">
+													<div class="numbertext">3 / 4</div>
+													<img src="images/moreScreens/exchangegram/4.png" style="width:100%">
+												  </div>
+											  
+												  
+												  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+												  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+											  
+												</div>
+											  </div>
+												<!-- end -->
 										  </div>
 										</div>
 									  </div>
@@ -260,7 +380,6 @@
 											  <div class="buttons">
 												<a href="https://github.com/sherzodMakhmudov/student_database" target="_blank" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"><i class="fa fa-github fa-2x"></i> Source code<br /> <small>Swift</small></a>
 											  </div>
-											  <button id="more-screens-spi" class="btn btn-default more-screens-btn" type="button">More Screens</button>
 											</div>
 										  </div>
 										</div>
@@ -328,7 +447,6 @@
 							<ul class="icons">
 								<li><a href="https://github.com/sherzodMakhmudov" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
 								<li><a href="https://www.linkedin.com/in/sherzodmakhmudov" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
-								<!-- <li><a href="https://www.instagram.com/sherdiddy/" class="icon brands fa-instagram alt" target="_blank"><span class="label">Instagram</span></a></li> -->
 							</ul>
 						</section>
 					</footer>
@@ -342,8 +460,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="/assets/js/lightbox.js"></script>
 
-		<!-- New JS -->
 
 			<!-- Core JavaScript Files -->
 			<script src="assets/js/jquery.min.js"></script>
